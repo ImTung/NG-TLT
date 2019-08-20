@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'TLT-NG-TLT',
+  selector: "TLT-NG-TLT",
   template: `
     <p>
-      ng-tlt works!
+      Initial v0.0.1
     </p>
   `,
   styles: []
 })
 export class NGTLTComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
