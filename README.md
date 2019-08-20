@@ -1,17 +1,19 @@
 # TLT for Angular - UI Components for Angular 8+
-## Features
-* UI Components for web applications
-* Written in Typescript
-* Mobile first
-* High perfomance
 
+## Features
+
+- UI Components for web applications
+- Written in Typescript
+- Mobile first
+- High perfomance
 
 ## Enviroment Support
-* Angular `8.0.0`
-* SSR
-* 
+
+- Angular `8.0.0`
+- SSR
 
 ## Installation
+
 ```
-$ echo “Coming Soon” 
+$ echo “Coming Soon”
 ```

@@ -1,0 +1,38 @@
+{
+  "name": "ng-tlt",
+  "version": "0.0.1",
+  "description": "UI Components for Angular 8+",
+  "author": "I'm Tung (toilatung@icloud.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ImTung/NG-TLT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ImTung/NG-TLT/issues"
+  },
+  "homepage": "https://github.com/ImTung/NG-TLT.git",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "ng-tlt"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/ng-tlt.umd.js",
+  "module": "fesm5/ng-tlt.js",
+  "es2015": "fesm2015/ng-tlt.js",
+  "esm5": "esm5/ng-tlt.js",
+  "esm2015": "esm2015/ng-tlt.js",
+  "fesm5": "fesm5/ng-tlt.js",
+  "fesm2015": "fesm2015/ng-tlt.js",
+  "typings": "ng-tlt.d.ts",
+  "metadata": "ng-tlt.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
