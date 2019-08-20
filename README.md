@@ -13,5 +13,5 @@
 
 ## Installation
 ```
-$ npm install ng-tlt  
+$ echo “Coming Soon” 
 ```
