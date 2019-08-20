@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "NG-TLT": {
+      "root": "projects/ng-tlt",
+      "sourceRoot": "projects/ng-tlt/src",
+      "projectType": "library",
+      "prefix": "TLT",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-tlt/tsconfig.lib.json",
+            "project": "projects/ng-tlt/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-tlt/src/test.ts",
+            "tsConfig": "projects/ng-tlt/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-tlt/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-tlt/tsconfig.lib.json",
+              "projects/ng-tlt/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "TLTLibrary"
