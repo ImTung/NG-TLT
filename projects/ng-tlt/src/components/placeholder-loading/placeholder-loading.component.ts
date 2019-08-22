@@ -1,4 +1,9 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import {
+  Component,
+  ChangeDetectionStrategy,
+  AfterViewInit,
+  Input
+} from "@angular/core";
 
 @Component({
   selector: "tlt-placeholder-loading",
@@ -6,4 +11,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
   styleUrls: ["./placeholder-loading.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PlaceholderLoadingComponent {}
+export class PlaceholderLoadingComponent implements AfterViewInit {
+  @Input() type = "default" || "card" || "article" || "custom";
+  ngAfterViewInit(): void {}
+}
