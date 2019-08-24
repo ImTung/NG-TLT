@@ -7,4 +7,4 @@ const COMPONENTS = [PlaceholderLoadingComponent];
   exports: COMPONENTS,
   imports: [CommonModule]
 })
-export class PlaceholderLoadingModule {}
+export class TLTPlaceholderLoadingModule {}
