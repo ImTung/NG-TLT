@@ -1,8 +1,4 @@
 version: 2
-dependencies:
-  pre:
-    - echo "registry=https://registry.npmjs.org/" > ~/.npmrc
-    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 jobs:
   build:
     working_directory: ~/NG-TLT
@@ -14,10 +10,9 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/NG-TLT/dist/ng-tlt/.npmrc
     steps:
       - checkout
+      - run: cat ~/.npmrc
       - run: npm install
       - run: npm run buildlib
-      - attach_workspace:
-          at: ~/NG-TLT/dist/ng-tlt
       - run: cd dist/ng-tlt;npm publish
 workflows:
   version: 2
