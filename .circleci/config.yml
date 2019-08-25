@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/
+    working_directory: ~/NG-TLT
     docker:
       - image: circleci/node:10.16.0
     steps:
@@ -9,7 +9,7 @@ jobs:
       - run: npm install
       - run: npm run buildlib
   deploy:
-    working_directory: ~/
+    working_directory: ~/NG-TLT
     docker:
       - image: circleci/node:10.16.0
     steps:
