@@ -10,13 +10,12 @@ jobs:
       - run: npm install
       - run: npm run buildlib
   deploy:
-    - attach_workspace:
-      at: ~/dist/
     - run:
       name: Authenticate with registry
       command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
     - run:
       name: Publish package
+      command: cd dist/ng-tlt
       command: npm publish
 workflows:
   version: 2
