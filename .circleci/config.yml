@@ -10,7 +10,7 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/NG-TLT/dist/ng-tlt/.npmrc
     steps:
       - checkout
-      - run: less ~/.npmrc
+      - run: printf "%s" "$(<~/.npmrc)"
       - run: npm install
       - run: npm run buildlib
       - run: cd dist/ng-tlt;npm publish
