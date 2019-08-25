@@ -4,18 +4,24 @@ machine:
 
 dependencies:
   pre:
-    - 'echo "//registry.npmjs.org/:_authToken=f7b8ae4f-95ce-496e-8e82-c5183ed071dc" > ~/.npmrc'
+    - 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
 
 compile:
   override:
     - npm run buildlib
 
 deployment:
-  feature:
+  production:
     branch: master
     commands:
-      - ./config/npm-deploy-feature.sh
-  production:
-    tag: /(v)?[0-9]+(\.[0-9]+)*/
-    commands:
-      - ./config/npm-deploy.sh
+      - cd dist/ng-tlt
+      - npm publish
+# deployment:
+#   feature:
+#     branch: master
+#     commands:
+#       - ./config/npm-deploy-feature.sh
+#   production:
+#     tag: /(v)?[0-9]+(\.[0-9]+)*/
+#     commands:
+#       - ./config/npm-deploy.sh
