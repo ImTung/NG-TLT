@@ -1,4 +1,8 @@
 version: 2
+dependencies:
+  pre:
+    - echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 jobs:
   build:
     working_directory: ~/NG-TLT
