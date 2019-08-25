@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6.9.5
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run buildlib
+  deploy:
+    - attach_workspace:
+      at: ~/dist/
+    - run:
+      name: Authenticate with registry
+      command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+    - run:
+      name: Publish package
+      command: npm publish
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
