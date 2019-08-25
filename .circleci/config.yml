@@ -13,6 +13,7 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=f7b8ae4f-95ce-496e-8e82-c5183ed071dc" > ~/NG-TLT/.npmrc
+      - run: cd dist/ng-tlt
       - run: npm publish
 workflows:
   version: 2
