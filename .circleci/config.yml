@@ -1,13 +1,17 @@
 version: 2
+defaults: &defaults
+  working_directory: ~/
+  docker:
+    - image: circleci/node:6.9.5
 jobs:
   build:
-    docker:
-      - image: circleci/node:6.9.5
+    <<: *defaults 
     steps:
       - checkout
       - run: npm install
       - run: npm run buildlib
   deploy:
+    <<: *defaults 
     - attach_workspace:
       at: ~/dist/
     - run:
@@ -21,4 +25,6 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires:
+            - build
