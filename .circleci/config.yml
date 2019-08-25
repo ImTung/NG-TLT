@@ -12,10 +12,10 @@ jobs:
           at: ~/NG-TLT/dist/ng-tlt
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=f7b8ae4f-95ce-496e-8e82-c5183ed071dc" > ~/NG-TLT/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/NG-TLT/.npmrc
       - run:
           name: Authenticate 2 with registry
-          command: echo "//registry.npmjs.org/:_authToken=f7b8ae4f-95ce-496e-8e82-c5183ed071dc" > ~/NG-TLT/dist/ng-tlt/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/NG-TLT/dist/ng-tlt/.npmrc
       - run: cd dist/ng-tlt;npm publish
 workflows:
   version: 2
