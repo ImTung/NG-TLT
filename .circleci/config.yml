@@ -10,6 +10,8 @@ jobs:
       - run: npm run buildlib
   deploy:
     working_directory: ~/
+    docker:
+      - image: circleci/node:10.16.0
     steps:
       - run:
         name: Authenticate with registry
