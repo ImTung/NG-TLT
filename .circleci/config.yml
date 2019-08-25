@@ -5,13 +5,11 @@ defaults: &defaults
     - image: circleci/node:6.9.5
 jobs:
   build:
-    <<: *defaults 
     steps:
       - checkout
       - run: npm install
       - run: npm run buildlib
   deploy:
-    <<: *defaults 
     - attach_workspace:
       at: ~/dist/
     - run:
