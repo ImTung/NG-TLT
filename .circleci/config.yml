@@ -9,6 +9,7 @@ jobs:
       - run: npm install
       - run: npm run buildlib
   deploy:
+    working_directory: ~/NG-TLT
     docker:
       - image: circleci/node:10.16.0
     steps:
@@ -18,7 +19,7 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=f7b8ae4f-95ce-496e-8e82-c5183ed071dc" > ~/NG-TLT/.npmrc
       - run:
-        name: Publish package
+        name: Publish
         command: npm publish
 workflows:
   version: 2
