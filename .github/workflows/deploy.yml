@@ -1,0 +1,28 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: NG-TLT
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+          registry-url: "https://registry.npmjs.org"
+      - name: Install NPM Package
+        run: npm install
+      - name: Build Library
+        run: npm run buildlib
+      - name: Publish
+        run: |
+          cd dist/ng-tlt
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
