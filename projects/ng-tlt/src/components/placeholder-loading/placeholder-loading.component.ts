@@ -6,7 +6,7 @@ import {
 } from "@angular/core";
 
 @Component({
-  selector: "tlt-placeholder-loading",
+  selector: "tltPL",
   templateUrl: "placeholder-loading.component.html",
   styleUrls: ["./placeholder-loading.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush

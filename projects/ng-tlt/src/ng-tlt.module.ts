@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
-import { PlaceholderLoadingModule } from "./components/placeholder-loading";
-const MODULES = [PlaceholderLoadingModule];
+import { TLTPlaceholderLoadingModule } from "./components/placeholder-loading";
+const MODULES = [TLTPlaceholderLoadingModule];
 @NgModule({
   exports: MODULES,
   declarations: [],
