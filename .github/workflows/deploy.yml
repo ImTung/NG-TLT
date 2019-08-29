@@ -26,12 +26,3 @@ jobs:
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - uses: actions/setup-node@v1
-        with:
-          registry-url: "https://npm.pkg.github.com"
-      - name: Publish
-        run: |
-          cd dist/ng-tlt
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GIT_TOKEN }}
