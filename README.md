@@ -17,3 +17,4 @@
 ```
 $ npm install ng-tlt
 ```
+## CHANGELOG
