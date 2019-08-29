@@ -1,1 +1,15 @@
 Hello Placeholder Loading Type: {{type}}
+<div class="tlt-placeholder-loading" [ngSwitch]="type">
+  <div *ngSwitchCase="'card'" class="tlt-placeholder-loading-data type-card">
+
+  </div>
+  <div *ngSwitchCase="'article'" class="tlt-placeholder-loading-data type-article">
+
+  </div>
+  <div *ngSwitchCase="'custom'" class="tlt-placeholder-loading-data type-custom">
+    <ng-content></ng-content>
+  </div>
+  <div *ngSwitchDefault class="tlt-placeholder-loading-data type-default">
+
+  </div>
+</div>
