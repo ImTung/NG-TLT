@@ -22,12 +22,16 @@ jobs:
         run: npm run buildlib
       - name: Directory
         run: cd dist/ng-tlt
-      - run: npm publish
+      - run: |
+        cd dist/ng-tlt
+        npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - uses: actions/setup-node@v1
         with:
           registry-url: "https://npm.pkg.github.com"
-      - run: npm publish
+      - run: |
+        cd dist/ng-tlt
+        npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_TOKEN }}
