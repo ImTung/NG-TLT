@@ -20,7 +20,9 @@ jobs:
       - name: Build Library
         run: npm run buildlib
       - name: Directory
-        run: cd dist/ng-tlt
+        run: |
+          cd dist/ng-tlt
+          npm adduser --registry=https://registry.npmjs.com
       - name: GitHub Action for npm
         uses: actions/npm@1.0.0
         env:
