@@ -17,7 +17,7 @@
 ### Enviroment Support
 
 - Angular `8.0.0`
-- SSR
+- Server-Side Render (SSR)
 
 ### Installation
 
@@ -31,4 +31,4 @@ $ npm install ng-tlt
 
 - Content Placeholder Loading module.
 
-#### 0.0.1-0.0.5: Initial
+#### 0.0.1-0.0.5 (1 Aug 19: 11:00 +00:00): Initial
