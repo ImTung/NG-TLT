@@ -1,19 +1,31 @@
 # TLT for Angular - UI Components for Angular 8+
 
-## Features
+## Table of contents
+
+- [Features](#features)
+- [Enviroment Support](#enviroment-support)
+- [Installation](#installation)
+- [Changelog](change-log)
+
+### Features
 
 - UI Components for web applications
 - Written in Typescript
 - Mobile first
 - High perfomance
 
-## Enviroment Support
+### Enviroment Support
 
 - Angular `8.0.0`
 - SSR
 
-## Installation
+### Installation
 
 ```
-$ echo “Coming Soon”
+$ npm install ng-tlt
 ```
+
+### CHANGE LOG
+
+- 0.0.6: Content Placeholder Loading module.
+- 0.0.1-0.0.5: Initial

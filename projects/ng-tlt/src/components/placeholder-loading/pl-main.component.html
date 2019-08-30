@@ -1,0 +1,12 @@
+Hello Placeholder Loading Type: {{type}}
+<div class="tlt-pl-data" [ngSwitch]="type">
+  <div *ngSwitchCase="'card'" class="tlt-pl type-card">
+
+  </div>
+  <div *ngSwitchCase="'article'" class="tlt-pl type-article">
+
+  </div>
+  <div *ngSwitchCase="'custom'" class="tlt-pl type-custom">
+    <ng-content></ng-content>
+  </div>
+</div>
