@@ -11,21 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Git Checkout
+        uses: actions/checkout@v1
+      - name: Setup NodeJS ENV
+        uses: actions/setup-node@v1
         with:
           node-version: 10.x
           registry-url: "https://registry.npmjs.org"
-      - name: Install NPM Package
+      - name: Install Package
         run: npm install
-      - name: Build Library
+      - name: Build NG-TLT Library
         run: npm run buildlib
-      - name: Publish
+      - name: Publish to NPM.JS
         run: |
           cd dist/ng-tlt
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - uses: actions/setup-node@v1
-        with:
-          registry-url: "https://npm.pkg.github.com"
+      # - name:
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     registry-url: "https://npm.pkg.github.com"
