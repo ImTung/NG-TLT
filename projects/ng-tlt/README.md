@@ -5,7 +5,7 @@
 - [Features](#features)
 - [Enviroment Support](#enviroment-support)
 - [Installation](#installation)
-- [Changelog](change-log)
+- [CHANGELOG](#change-log)
 
 ### Features
 
@@ -27,5 +27,8 @@ $ npm install ng-tlt
 
 ### CHANGE LOG
 
-- 0.0.6: Content Placeholder Loading module.
-- 0.0.1-0.0.5: Initial
+#### v0.0.6 (30 Aug 19 23:23 +00:00):
+
+- Content Placeholder Loading module.
+
+#### 0.0.1-0.0.5: Initial
