@@ -24,6 +24,7 @@ jobs:
         run: npm run buildlib
       - name: Publish to NPM.JS
         run: |
+          cp README.md dist/ng-tlt/README.md
           cd dist/ng-tlt
           npm publish
         env:
