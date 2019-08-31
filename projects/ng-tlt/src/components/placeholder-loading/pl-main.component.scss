@@ -1,0 +1,26 @@
+.tlt-pl-container {
+  .tlt-pl {
+    display: flex;
+
+    &.type-default {
+      .tlt-pl-avatar {
+        margin-right: 16px;
+        flex: 0;
+      }
+
+      .rects {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .rect__item {
+          margin-bottom: 8px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
