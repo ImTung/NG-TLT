@@ -1,10 +1,28 @@
-Hello Placeholder Loading Type: {{type}}
-<div class="tlt-pl-data" [ngSwitch]="type">
+<div class="tlt-pl-container" [ngSwitch]="type">
   <div *ngSwitchCase="'card'" class="tlt-pl type-card">
 
   </div>
   <div *ngSwitchCase="'article'" class="tlt-pl type-article">
 
+  </div>
+  <div *ngSwitchDefault class="tlt-pl type-default">
+    <tltPLCircle [size]="'48px'" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
+      [animated]="animated">
+    </tltPLCircle>
+    <div class="rects">
+      <tltPLRect class="rect__item rect__1" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'100%'"
+        [height]="'16px'" [radius]="'3px'" [animated]="animated">
+      </tltPLRect>
+      <tltPLRect class="rect__item rect__2" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
+        [height]="'16px'" [radius]="'3px'" [animated]="animated">
+      </tltPLRect>
+      <tltPLRect class="rect__item rect__3" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
+        [height]="'16px'" [radius]="'3px'" [animated]="animated">
+      </tltPLRect>
+      <tltPLRect class="rect__item rect__4" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'50%'"
+        [height]="'16px'" [radius]="'3px'" [animated]="animated">
+      </tltPLRect>
+    </div>
   </div>
   <div *ngSwitchCase="'custom'" class="tlt-pl type-custom">
     <ng-content></ng-content>
