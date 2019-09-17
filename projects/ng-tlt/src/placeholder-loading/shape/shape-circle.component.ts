@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
-import { TLTAnimation } from "../../../shared/tlt-animations";
+import { TLTAnimation } from "../../shared/tlt-animations";
 
 @Component({
   selector: "tltPLCircle",
