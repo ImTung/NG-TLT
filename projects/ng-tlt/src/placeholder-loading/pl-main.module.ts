@@ -9,4 +9,4 @@ const COMPONENTS = [PLMain, PLShapeCircle, PLShapeRectangle];
   exports: COMPONENTS,
   imports: [CommonModule]
 })
-export class tltPLModule {}
+export class PLModule {}
