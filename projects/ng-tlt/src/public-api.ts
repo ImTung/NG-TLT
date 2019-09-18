@@ -1,5 +1,1 @@
-/*
- * Public API Surface of ng-tlt
- */
-
-export * from "./placeholder-loading"
+export * from "./placeholder-loading/public-api";
