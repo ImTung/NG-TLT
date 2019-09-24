@@ -1,34 +1,24 @@
-# TLT for Angular - UI Components for Angular 8+
+# NgTlt
 
-## Table of contents
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.7.
 
-- [Features](#features)
-- [Environment Support](#environment-support)
-- [Installation](#installation)
-- [CHANGELOG](#change-log)
+## Code scaffolding
 
-### Features
+Run `ng generate component component-name --project ng-tlt` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-tlt`.
+> Note: Don't forget to add `--project ng-tlt` or else it will be added to the default project in your `angular.json` file. 
 
-- UI Components for web applications
-- Written in Typescript
-- Mobile first
-- High performance
+## Build
 
-### Environment Support
+Run `ng build ng-tlt` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- Angular `8.0.0`
-- Server-Side Render (SSR)
+## Publishing
 
-### Installation
+After building your library with `ng build ng-tlt`, go to the dist folder `cd dist/ng-tlt` and run `npm publish`.
 
-```
-$ npm install ng-tlt
-```
+## Running unit tests
 
-### CHANGE LOG
+Run `ng test ng-tlt` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-#### v0.0.6 (30 Aug 19 23:23 +00:00):
+## Further help
 
-- Content Placeholder Loading module.
-
-#### 0.0.1-0.0.5 (1 Aug 19: 11:00 +00:00): Initial
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
