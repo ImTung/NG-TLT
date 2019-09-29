@@ -1,8 +1,8 @@
-import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
-import { TLTAnimation } from "../../shared/tlt-animations";
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { TLTAnimation } from '../../shared/tlt-animations';
 
 @Component({
-  selector: "tltPLRect",
+  selector: 'tltPLRect',
   template: `
     <div
       class="tlt-pl shape-rectagnle"
@@ -26,24 +26,24 @@ import { TLTAnimation } from "../../shared/tlt-animations";
   animations: TLTAnimation
 })
 export class PLShapeRectangle {
-  @Input() width = "100px";
-  @Input() height = "30px";
-  @Input() color = "#EEE";
-  @Input() radius = "10px";
+  @Input() width = '100px';
+  @Input() height = '30px';
+  @Input() color = '#EEE';
+  @Input() radius = '10px';
   @Input() animated: boolean;
-  @Input() duration = "1s";
-  @Input() colorAni = "#DDD";
+  @Input() duration = '1s';
+  @Input() colorAni = '#DDD';
 
-  constructor() {}
+  constructor() { }
 
   rectStyle() {
     let style = {
       width: this.width,
       height: this.height,
-      "border-radius": this.radius,
-      display: "flex",
-      "flex-direction": "column",
-      position: "relative",
+      'border-radius': this.radius,
+      display: 'flex',
+      'flex-direction': 'column',
+      position: 'relative',
       background: this.color
     };
     if (this.animated) {
@@ -53,14 +53,14 @@ export class PLShapeRectangle {
   }
 
   get animation() {
-    let ani = {
+    const ani = {
       background: `linear-gradient(to right, ${this.color} 8%, ${this.colorAni} 18%, ${this.color} 33%)`,
-      "background-size": "800px 100px",
-      "animation-duration": this.duration,
-      "animation-name": "tltPLAnimated",
-      "animation-timing-function": "linear",
-      "animation-iteration-count": "infinite",
-      "animation-fill-mode": "forwards"
+      'background-size': '800px 100px',
+      'animation-duration': this.duration,
+      'animation-name': 'tltPLAnimated',
+      'animation-timing-function': 'linear',
+      'animation-iteration-count': 'infinite',
+      'animation-fill-mode': 'forwards'
     };
     return ani;
   }
