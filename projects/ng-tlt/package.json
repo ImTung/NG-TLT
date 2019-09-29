@@ -1,6 +1,6 @@
 {
   "name": "ng-tlt",
-  "version": "0.0.1",
+  "version": "0.0.8-beta1",
   "peerDependencies": {
     "@angular/common": "^8.2.7",
     "@angular/core": "^8.2.7"

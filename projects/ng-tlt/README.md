@@ -1,24 +1,52 @@
-# NgTlt
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.7.
+# TLT for Angular - UI Components for Angular 8+
+This is just beta. Using in Development environment, I'm not recommended using in Production environment.
+## Table of contents
+* [Features](#features)
+* [Environment Support](#enviroment-support)
+* [Installation](#installation)
+* [CHANGELOG](#change-log)
 
-## Code scaffolding
+### Features
+* UI Components for web applications
+* Written in Typescript
+* Mobile first
+* High performance
 
-Run `ng generate component component-name --project ng-tlt` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-tlt`.
-> Note: Don't forget to add `--project ng-tlt` or else it will be added to the default project in your `angular.json` file. 
+### Components
+- [ ] Button 
+	- [ ] Solid
+	- [ ] Outline
+	- [ ] Clear
+	- [ ] Gradient
+	- [ ] Loading state
+	- [ ] Success state
+	- [ ] Error State
+- [ ] Content Placeholder Loading
+	- [ ] Card
+	- [ ] Text
+	- [ ] Avatar
+- [ ] Empty State
+- [ ] Card
+- [ ] Rating
+	- [ ] Default icon
+	- [ ] Heart icon
+	- [ ] Custom icon
+- [ ] Loading
 
-## Build
 
-Run `ng build ng-tlt` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Environment Support
+* Angular `8.0.0`
+* Server-Side Render (SSR)
 
-## Publishing
+### Installation
+```
+$ npm install ng-tlt
+```
 
-After building your library with `ng build ng-tlt`, go to the dist folder `cd dist/ng-tlt` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ng-tlt` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### CHANGE LOG
+#### v0.0.8-beta1 (29 Sep 19 14:30 +00:00)
+* Build beta
+#### v0.0.6 (30 Aug 19 23:23 +00:00): 
+* Content Placeholder Loading module.
+#### 0.0.1-0.0.5 (1 Aug 19: 11:00 +00:00): Initial
