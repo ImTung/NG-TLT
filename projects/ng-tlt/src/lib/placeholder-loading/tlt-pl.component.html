@@ -5,6 +5,11 @@
   <div *ngSwitchCase="'article'" class="tlt-pl type-article">
 
   </div>
+  <div *ngSwitchCase="'avatar'" class="tlt-pl type-avatar">
+    <tltPLCircle [size]="size" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
+      [animated]="animated">
+    </tltPLCircle>
+  </div>
   <div *ngSwitchDefault class="tlt-pl type-default">
     <tltPLCircle [size]="'48px'" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
       [animated]="animated">

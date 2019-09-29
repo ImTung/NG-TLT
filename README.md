@@ -1,27 +1,54 @@
-# NGTLT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+# TLT for Angular - UI Components for Angular 8+
+This is just beta. Using in Development environment, I'm not recommended using in Production environment.
+## Table of contents
+* [Features](#features)
+* [Environment Support](#enviroment-support)
+* [Installation](#installation)
+* [CHANGELOG](#change-log)
 
-## Development server
+### Features
+* UI Components for web applications
+* Written in Typescript
+* Mobile first
+* High performance
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Components
+- [ ] Button 
+	- [ ] Solid
+	- [ ] Outline
+	- [ ] Clear
+	- [ ] Gradient
+	- [ ] Loading state
+	- [ ] Success state
+	- [ ] Error State
+- [ ] Content Placeholder Loading
+	- [ ] Card
+	- [ ] Text
+	- [ ] Avatar
+- [ ] Empty State
+- [ ] Card
+- [ ] Rating
+	- [ ] Default icon
+	- [ ] Heart icon
+	- [ ] Custom icon
+- [ ] Loading
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Environment Support
+* Angular `8.0.0`
+* Server-Side Render (SSR)
 
-## Build
+### Installation
+```
+$ npm install ng-tlt
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### CHANGE LOG
+#### v0.0.8-beta2 (29 Sep 19 15:00 +00:00)
+* Placeholder Content Loading - Avatar
+#### v0.0.8-beta1 (29 Sep 19 14:30 +00:00)
+* Build beta
+#### v0.0.6 (30 Aug 19 23:23 +00:00): 
+* Content Placeholder Loading module.
+#### 0.0.1-0.0.5 (1 Aug 19: 11:00 +00:00): Initial

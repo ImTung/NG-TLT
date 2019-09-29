@@ -12,7 +12,8 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PLComponent {
-  @Input() type = 'default' || 'card' || 'article' || 'custom';
+  @Input() type = 'default' || 'avatar' || 'card' || 'article' || 'custom';
+  @Input() size = '48px';
   @Input() animated = true;
   @Input() color = '#EEE';
   @Input() duration = '1s';
