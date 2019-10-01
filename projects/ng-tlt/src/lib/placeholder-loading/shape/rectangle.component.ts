@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { TLTAnimation } from '../../shared/tlt-animations';
-
+import { TLTUnitType } from '../../shared/types';
 @Component({
   selector: 'tlt-plrect',
   template: `
@@ -26,10 +26,10 @@ import { TLTAnimation } from '../../shared/tlt-animations';
   animations: TLTAnimation
 })
 export class PLShapeRectangleComponent {
-  @Input() width: string | number = 100;
-  @Input() height: string | number = 30;
+  @Input() width: TLTUnitType = 100;
+  @Input() height: TLTUnitType = 30;
   @Input() color = '#EEE';
-  @Input() radius: string | number = 10;
+  @Input() radius: TLTUnitType = 10;
   @Input() animated: boolean;
   @Input() duration = 1000;
   @Input() colorAni = '#DDD';
