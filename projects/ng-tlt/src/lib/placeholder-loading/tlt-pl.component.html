@@ -5,28 +5,33 @@
   <div *ngSwitchCase="'article'" class="tlt-pl type-article">
 
   </div>
+  <div *ngSwitchCase="'image'" class="tlt-pl type-image">
+    <tlt-plrect class="rect__item rect__1" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="width"
+      [height]="height" [radius]="3" [animated]="animated">
+    </tlt-plrect>
+  </div>
   <div *ngSwitchCase="'avatar'" class="tlt-pl type-avatar">
-    <tltPLCircle [size]="size" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
+    <tlt-plcircle [size]="size" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
       [animated]="animated">
-    </tltPLCircle>
+    </tlt-plcircle>
   </div>
   <div *ngSwitchDefault class="tlt-pl type-default">
-    <tltPLCircle [size]="'48px'" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
+    <tlt-plcircle [size]="48" class="tlt-pl-avatar" [color]="color" [colorAni]="colorAni" [duration]="duration"
       [animated]="animated">
-    </tltPLCircle>
+    </tlt-plcircle>
     <div class="rects">
-      <tltPLRect class="rect__item rect__1" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'100%'"
-        [height]="'16px'" [radius]="'3px'" [animated]="animated">
-      </tltPLRect>
-      <tltPLRect class="rect__item rect__2" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
-        [height]="'16px'" [radius]="'3px'" [animated]="animated">
-      </tltPLRect>
-      <tltPLRect class="rect__item rect__3" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
-        [height]="'16px'" [radius]="'3px'" [animated]="animated">
-      </tltPLRect>
-      <tltPLRect class="rect__item rect__4" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'50%'"
-        [height]="'16px'" [radius]="'3px'" [animated]="animated">
-      </tltPLRect>
+      <tlt-plrect class="rect__item rect__1" [color]="color" [colorAni]="colorAni" [duration]="duration"
+        [width]="'100%'" [height]="16" [radius]="3" [animated]="animated">
+      </tlt-plrect>
+      <tlt-plrect class="rect__item rect__2" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
+        [height]="16" [radius]="3" [animated]="animated">
+      </tlt-plrect>
+      <tlt-plrect class="rect__item rect__3" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'80%'"
+        [height]="16" [radius]="3" [animated]="animated">
+      </tlt-plrect>
+      <tlt-plrect class="rect__item rect__4" [color]="color" [colorAni]="colorAni" [duration]="duration" [width]="'50%'"
+        [height]="16" [radius]="3" [animated]="animated">
+      </tlt-plrect>
     </div>
   </div>
   <div *ngSwitchCase="'custom'" class="tlt-pl type-custom">
