@@ -1,6 +1,9 @@
 
 # TLT for Angular - UI Components for Angular 8+
 This is just beta. Using in Development environment, I'm not recommended using in Production environment.
+
+**Note**: NG-TLT is currently under community development in alpha phase. I'm not expected to be used for production until its 1.0 stable release.
+
 ## Table of contents
 * [Features](#features)
 * [Environment Support](#enviroment-support)
